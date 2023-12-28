@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: #f5f5f5;
+}
+    /* Header */
+.header{
+    background-color: #8a2ab2;
+    color: #fff;
+    width: 100%;
+    height: 200px;
+    padding-top: 14px;
+    padding-left: 14px;
+    font-weight: 900;
+    font-size: large;
+    position: absolute;
+}
+    /* Container principal */
+.container {
+    background-color: #fff;
+    color: black;
+    position: relative;
+    width: 60%;
+    height: 1300px;
+    margin-top: 120px;
+}
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    border-bottom: 0.8px solid #C0C0C0;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    font-size: 11px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+form{
+    display: block;
+    margin-left: 20px;
+    padding-top: 20px;
+}
+.main-titler,
+.informacoes {
+    font-family: 'DM Serif Display', serif;
+}
+.main-titler{
+    font-size: 22px; 
+    margin-bottom: 8px;
+}
+.informacoes{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 18px;
+}
+    /* Inputs e Labels */
+label,
+input {
+    display: block;
+}
+label{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+input{
+    border: none;
+    border-bottom: solid 1px #ccc;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus{
+    outline: none;
+}
+input[type="date"]{
+    cursor: pointer;
+}
+textarea{
+    padding-top: 1px;
+    padding-left: 1px;
+}
+.inputs-linha>input{
+    width: 400px;
+}
+    /* Radio */
+#radio>input{
+    cursor: pointer;
+}
+#radio>p{
+    margin-left: 2px;
+    margin-right: 10px;
+}
+#radio{
+    display: flex;
+}
+    /* Checkbox */
+#checkbox>input {
+    cursor: pointer;
+    float: left;
+    margin-top: 2px;   
+}
+    /* Botão */
+#bnt1{
+    height: 40px;
+    width: 22%;
+    border: 1px solid #6C6B74;
+    text-transform: uppercase;
+    border-radius: 5%;
+    cursor: pointer;
+    transition: background-color .5s;
+    color: #fff;
+    background-color: #8a2ab2;
+    margin-top: 20px;
+    margin-left: 39%;
+}
+#bnt1:hover{
+    background-color: #8a1991;
+}
