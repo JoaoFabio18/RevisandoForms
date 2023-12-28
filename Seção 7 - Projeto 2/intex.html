@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+    <title>Projeto 2</title>
+</head>
+
+<body>
+    <div>
+        <!-- Fundo roxo -->
+        <div class="header">
+                Cadastre seu veículo para vender mais rápido!
+        </div>
+        <!-- Main Container -->
+        <div class="container-main">
+            <!-- Área dentro do container -->
+            <div class="container">
+                <!-- titulo formulario -->
+                <div class="title">
+                    <h1>
+                        formulário
+                    </h1>
+                </div>
+                <!-- Formário -->
+                <form>
+                    <!-- titulo do forms -->
+                    <div class="main-titler">
+                        <h2>
+                            Venda fácil seu carro!
+                        </h2>
+                    </div>
+                    <!-- Info -->
+                    <div class="informacoes">
+                        <p>Descreva as características e marque os opcionais que ele possui</p>
+                    </div>
+                    <!-- Área de prenchimento do forms -->
+                    <div class="formulario">
+                        <!-- Inputs text textared -->
+                        <div class="inputs-linha">
+                        
+                        <!-- Título do anúncio -->
+                        <label for="titleAnun">Título do anúncio:</label>
+                        <input 
+                        type="text" 
+                        name="titleAnun" 
+                        maxlength="30" 
+                        required 
+                        placeholder="Um Título para anunciar seu carro">
+
+                        <!-- Preço -->
+                        <label for="preço">Preço:</label>
+                        <input 
+                        type="number" 
+                        name="preço" 
+                        maxlength="60" 
+                        required 
+                        placeholder="Defina o preço">
+
+                        <!-- Descrição -->
+                        <label for="descrioption">Descrição:</label>
+                        <textarea 
+                        name="descrioption" 
+                        rows="4" 
+                        cols="52" 
+                        placeholder="Aqui você coloca detalhes de veículo por exemplo se tem algum aranhão"></textarea>
+
+                        <!-- Marca -->
+                        <label for="marca">Marca:</label>
+                        <input 
+                        type="text" 
+                        name="marca" 
+                        maxlength="30" 
+                        required 
+                        placeholder="Digite a marca do veículo">
+
+                        <!-- Modelo -->
+                        <label for="modelo">Modelo:</label>
+                        <input 
+                        type="text" 
+                        name="modelo" 
+                        maxlength="30" 
+                        required 
+                        placeholder="Digite o modelo do veículo">
+
+                        <!-- Kilometragem -->
+                        <label for="km">Kilometragem:</label>
+                        <input 
+                        type="number" 
+                        name="km" 
+                        maxlength="50" 
+                        required 
+                        placeholder="Digite a kilometragem do veículo">
+
+                        <!-- Data de compra -->
+                        <label for="dataCompra">Data de compra:</label>
+                        <input 
+                        type="date" 
+                        name="dataCompra" 
+                        required
+                        min="1886-01-01" 
+                        max="2024-12-31">
+                        </div>
+
+                        <!-- Box e Arquivos -->
+                        <div class="inputs-box-file">
+                        
+                        <!-- Tipo de câmbio -->
+                        <label for="cambio">Tipo de câmbio:</label>
+                        <div id="radio">
+                            <input type="radio" name="cambio" value="manual"> <p>Manual</p>
+                            <input type="radio" name="cambio" value="automatico"> <p>Automático</p>
+                        </div>
+
+                        <!-- Opcionais -->
+                        <label for="opcionais">Opcionais:</label>
+                        <div id="checkbox">
+                        <input type="checkbox" name="opcionais []"> <p>Airbag</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Assistente de pista</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Alarme</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Partida Keyless</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Ar Condicionado</p>
+                        <input type="checkbox" name="opcionais []"> <p>Integração com celular</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Câmera de Ré</p> 
+                        <input type="checkbox" name="opcionais []"> <p>Banco de couro</p>
+                        </div>
+
+                        <!-- Fotos do carro -->
+                        <label for="fotos">Fotos do carro:</label>
+                        <input type="file" name="fotos" multiple  accept="image/png, image/jpg">
+                        </div>
+                        
+                        <!-- Botão de envio -->
+                        <input type="submit" value="Enviar" id="bnt1">
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
